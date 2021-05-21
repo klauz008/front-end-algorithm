@@ -1,9 +1,11 @@
 // A function that converts Degree Farenheit to Degree Celsius
 
 function convertFahrToCelsius (degF) {
-    let degC = (degF - 32) * 5/9;
+    let actualDegF = Number(degF)
+    let degC = (actualDegF - 32) * 5/9;
     result = degC
-
+    updatedTemp = degC.toFixed(4)
+    
 }
-convertFahrToCelsius(55)
-console.log(result)
+convertFahrToCelsius("25")
+console.log(updatedTemp)
